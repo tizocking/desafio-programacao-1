@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15">
+<title>AutoParser 1.0</title>
+</head>
+<body>
+<h1>Upload de Arquivo</h1>
+<form action="" method="POST" enctype="multipart/form-data">
+	{% csrf_token %}
+ <input type="file" name="upload_file">
+ <br>
+ <input type="submit" value="Fazer Upload" />
+</form>
+<br>
+<h2>Valor Total: {{ result }}</h2>
+</body> </html>
